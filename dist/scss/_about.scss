@@ -1,0 +1,70 @@
+.about {
+  padding-bottom: 2rem;
+  line-height: 17px;
+
+  &-bio-image {
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba($primary-color, 0.7),
+        rgba($primary-color, 0.3)
+      ),
+      url(../images/10633893_830399667028076_4180865653656825279_o.jpg) center
+        top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    p {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-bio {
+    width: 60%;
+    text-align: center;
+    text-shadow: 2px 2px #616161;
+
+    .text-secondary {
+      padding-bottom: 1rem;
+      font-size: 3rem;
+    }
+  }
+
+  .jobs {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &-job {
+      background: lighten($primary-color, 10%);
+      padding: 0.5rem;
+      border-bottom: 5px solid $secondary-color;
+      border-radius: 10px;
+
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+      }
+
+      h6 {
+        margin: 0.3rem 0;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  }
+}

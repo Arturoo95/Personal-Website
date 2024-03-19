@@ -1,0 +1,45 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin centerContent {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin secondaryCover($content) {
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  content: $content;
+  position: absolute;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  top: 100%;
+  left: 19.7%;
+  height: 100%;
+  width: 60.2%;
+  background: $secondary-color;
+  opacity: 0;
+  @include transition-ease;
+}
