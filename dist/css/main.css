@@ -79,6 +79,12 @@
   padding-bottom: 1rem;
   font-size: 3rem;
 }
+.about-bio .about-bio-text {
+  background-color: hsla(0, 0%, 28%, 0.3);
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
 .about .jobs {
   width: 60vw;
   margin: 2rem auto 0 auto;
@@ -130,8 +136,8 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
 }
 .menu-btn-burger {
   position: absolute;
@@ -147,6 +153,7 @@
   content: "";
   position: absolute;
   top: -8px;
+  right: 0px;
   width: 28px;
   height: 3px;
   background-color: #fff;
@@ -156,8 +163,9 @@
 .menu-btn-burger::after {
   content: "";
   position: absolute;
+  right: 0px;
   top: 8px;
-  width: 20px;
+  width: 28px;
   height: 3px;
   background-color: #fff;
   -webkit-transition: all 0.5s ease-in-out;
@@ -267,7 +275,7 @@
   padding-bottom: 2rem;
 }
 .projects-bio-image {
-  height: 40vh;
+  height: 60vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.5)), to(rgba(39, 39, 39, 0.8))), url(..//images/1012302_511471672254212_127515971_n.jpg) center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.8)), url(..//images/1012302_511471672254212_127515971_n.jpg) center top;
@@ -293,7 +301,7 @@
 }
 .projects-items {
   width: 100%;
-  margin: 2rem auto 0 auto;
+  margin: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,6 +310,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 .projects .first-project::after {
   display: -webkit-box;
@@ -429,6 +441,7 @@
   transition: all 0.5s ease-in-out;
 }
 .projects-item {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,6 +501,7 @@
   width: 50px;
   height: 50px;
   margin-right: 15px;
+  border-radius: 25px;
 }
 .projects-item .logo-button button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -564,6 +578,37 @@
   right: 0;
 }
 
+@media (max-width: 1200px) {
+  .card {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  textarea {
+    height: 18vh;
+  }
+  #icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0.5rem;
+  }
+}
 body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
