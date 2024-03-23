@@ -440,6 +440,31 @@
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+.projects .sixth-project::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "Amazon Website Clone";
+  position: absolute;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  top: 100%;
+  left: 19.7%;
+  height: 100%;
+  width: 60.2%;
+  background: #ff652f;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 .projects-item {
   width: 100%;
   display: -webkit-box;
