@@ -43,3 +43,22 @@ $secondary-color: #ff652f;
   opacity: 0;
   @include transition-ease;
 }
+
+@mixin secondaryCoverMobile($content) {
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  content: $content;
+  position: absolute;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  top: 100%;
+  left: 19.7%;
+  height: 100%;
+  width: 60.2%;
+  background: $secondary-color;
+  opacity: 0;
+  @include transition-ease;
+}

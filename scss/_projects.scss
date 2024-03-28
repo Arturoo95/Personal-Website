@@ -1,3 +1,5 @@
+@import "./config";
+
 .projects {
   padding-bottom: 2rem;
 
@@ -35,7 +37,7 @@
   }
 
   .first-project::after {
-    @include secondaryCover("Iphone Calculator App");
+    @include secondaryCover("Iphone Calculator");
   }
 
   .second-project::after {
@@ -151,7 +153,7 @@
     }
 
     img {
-      width: 100%;
+      width: 60%;
       height: 50%;
     }
   }
@@ -175,10 +177,128 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .projects {
     display: flex;
     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+
+    &-bio-image {
+      height: 40vh;
+      width: 100%;
+      background: linear-gradient(
+          to right,
+          rgba($primary-color, 0.5),
+          rgba($primary-color, 0.8)
+        ),
+        url(..//images/1012302_511471672254212_127515971_n.jpg) center top;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      .text-secondary {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        text-shadow: 2px 2px #616161;
+      }
+    }
+
+    .first-project::after {
+      content: "Iphone Calculator";
+      display: flex;
+      height: 33%;
+      top: 125px;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: 35px;
+      transition: all 0.5s ease-in-out;
+      font-size: 1.5rem;
+    }
+
+    .second-project::after {
+      content: "Weather App";
+      display: flex;
+      height: 33%;
+      top: 125px;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: 35px;
+      transition: all 0.5s ease-in-out;
+      font-size: 1.5rem;
+    }
+
+    .third-project::after {
+      content: "Chat App (React)";
+      display: flex;
+      height: 33%;
+      top: 125px;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: 35px;
+      transition: all 0.5s ease-in-out;
+      font-size: 1.5rem;
+    }
+
+    .fourth-project::after {
+      content: "Quiz App (React)";
+      display: flex;
+      height: 33%;
+      top: 125px;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: 35px;
+      transition: all 0.5s ease-in-out;
+      font-size: 1.5rem;
+    }
+
+    .fifth-project::after {
+      content: "Translator App";
+      display: flex;
+      height: 33%;
+      top: 125px;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: 35px;
+      transition: all 0.5s ease-in-out;
+      font-size: 1.5rem;
+    }
+
+    .sixth-project::after {
+      content: "Amazon Website Clone";
+      display: flex;
+      height: 33%;
+      top: 125px;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: 35px;
+      transition: all 0.5s ease-in-out;
+      font-size: 1.5rem;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .logo-button {
+      width: 100%;
+      margin: 0;
+
+      button {
+        width: auto;
+        margin: 10px 0;
+        width: 600px;
+        font-size: 1.5rem;
+      }
+
+      img {
+        display: none;
+      }
+    }
   }
   textarea {
     height: 18vh;

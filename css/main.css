@@ -42,6 +42,12 @@
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  .home {
+    background-size: cover;
+    padding-top: 30vh;
+  }
+}
 .about {
   padding-bottom: 2rem;
   line-height: 17px;
@@ -121,6 +127,32 @@
           transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+@media (max-width: 600px) {
+  .about-bio-image {
+    height: 80vh;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.7)), to(rgba(39, 39, 39, 0.3))), url(../images/10633893_830399667028076_4180865653656825279_o.jpg) center top;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.3)), url(../images/10633893_830399667028076_4180865653656825279_o.jpg) center top;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .about-bio-image p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -271,6 +303,13 @@
           transition-delay: 0.55s;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .projects {
   padding-bottom: 2rem;
 }
@@ -327,7 +366,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  content: "Iphone Calculator App";
+  content: "Iphone Calculator";
   position: absolute;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
@@ -585,7 +624,7 @@
   color: #fff;
 }
 .projects-item img {
-  width: 100%;
+  width: 60%;
   height: 50%;
 }
 .projects .social-icons {
@@ -608,7 +647,7 @@
     width: 90%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .projects {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -617,6 +656,140 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+  .projects-bio-image {
+    height: 40vh;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.5)), to(rgba(39, 39, 39, 0.8))), url(..//images/1012302_511471672254212_127515971_n.jpg) center top;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.8)), url(..//images/1012302_511471672254212_127515971_n.jpg) center top;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .projects-bio-image .text-secondary {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px #616161;
+  }
+  .projects .first-project::after {
+    content: "Iphone Calculator";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 33%;
+    top: 125px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 35px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+  }
+  .projects .second-project::after {
+    content: "Weather App";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 33%;
+    top: 125px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 35px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+  }
+  .projects .third-project::after {
+    content: "Chat App (React)";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 33%;
+    top: 125px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 35px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+  }
+  .projects .fourth-project::after {
+    content: "Quiz App (React)";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 33%;
+    top: 125px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 35px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+  }
+  .projects .fifth-project::after {
+    content: "Translator App";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 33%;
+    top: 125px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 35px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+  }
+  .projects .sixth-project::after {
+    content: "Amazon Website Clone";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 33%;
+    top: 125px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 35px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+  }
+  .projects-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .projects .logo-button {
+    width: 100%;
+    margin: 0;
+  }
+  .projects .logo-button button {
+    width: auto;
+    margin: 10px 0;
+    width: 600px;
+    font-size: 1.5rem;
+  }
+  .projects .logo-button img {
+    display: none;
   }
   textarea {
     height: 18vh;
@@ -682,27 +855,6 @@ body {
   color: #ff652f;
   text-shadow: 2px 2px #616161;
 }
-.contacts .jobs {
-  width: 60vw;
-  margin: 2rem auto 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-}
-.contacts .jobs-job {
-  background: #414141;
-  padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
-}
-.contacts .jobs-job h2,
-.contacts .jobs-job h3 {
-  margin: 0.5rem 0;
-}
-.contacts .jobs-job h6 {
-  margin: 0.3rem 0;
-}
 .contacts .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -758,6 +910,54 @@ body {
   margin: 0.3rem 0;
 }
 
+@media (max-width: 600px) {
+  .contacts-image-info {
+    height: 40vh;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.7)), to(rgba(39, 39, 39, 0.3))), url(../images/night.jpg) center top;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.3)), url(../images/night.jpg) center top;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .contacts-image-info p {
+    margin-bottom: 2rem;
+  }
+  .contacts-image-info-info {
+    width: 60%;
+    text-align: center;
+    text-shadow: 2px 2px #616161;
+  }
+  .contacts-image-info .text-secondary {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    color: #ff652f;
+    text-shadow: 2px 2px #616161;
+  }
+  .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .socials p {
+    font-size: 20px;
+  }
+}
 body {
   background: #272727;
   color: #fff;
