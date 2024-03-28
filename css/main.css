@@ -12,13 +12,6 @@
   padding: 0;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -45,7 +38,17 @@
 @media (max-width: 600px) {
   .home {
     background-size: cover;
-    padding-top: 30vh;
+    padding-top: 40vh;
+  }
+  .home-name {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    border-bottom: 2px solid #fff;
+  }
+  .home-lastname {
+    color: #ff652f;
+    font-weight: 700;
   }
 }
 .about {
@@ -689,10 +692,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 33%;
     top: 125px;
     border-radius: 10px;
-    width: 50%;
+    height: 30%;
+    width: 48%;
     margin-left: 35px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -703,10 +706,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 33%;
     top: 125px;
     border-radius: 10px;
-    width: 50%;
+    height: 30%;
+    width: 48%;
     margin-left: 35px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -717,10 +720,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 33%;
     top: 125px;
     border-radius: 10px;
-    width: 50%;
+    height: 30%;
+    width: 48%;
     margin-left: 35px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -731,10 +734,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 33%;
     top: 125px;
     border-radius: 10px;
-    width: 50%;
+    height: 30%;
+    width: 48%;
     margin-left: 35px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -745,10 +748,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 33%;
     top: 125px;
     border-radius: 10px;
-    width: 50%;
+    height: 30%;
+    width: 48%;
     margin-left: 35px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -759,10 +762,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 33%;
     top: 125px;
     border-radius: 10px;
-    width: 50%;
+    height: 30%;
+    width: 48%;
     margin-left: 35px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;

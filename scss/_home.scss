@@ -1,5 +1,3 @@
-@import "./config";
-
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -31,6 +29,18 @@
 @media (max-width: 600px) {
   .home {
     background-size: cover;
-    padding-top: 30vh;
+    padding-top: 40vh;
+
+    &-name {
+      font-size: 4rem;
+      padding-bottom: 1rem;
+      margin: 1rem;
+      border-bottom: 2px solid set-text-color($primary-color);
+    }
+
+    &-lastname {
+      color: $secondary-color;
+      font-weight: 700;
+    }
   }
 }
