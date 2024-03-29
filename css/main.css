@@ -335,6 +335,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  border-bottom: 6px solid #ff652f;
 }
 .projects-bio-image .text-secondary {
   font-size: 4rem;
@@ -681,6 +682,7 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    border-bottom: 6px solid #ff652f;
   }
   .projects-bio-image .text-secondary {
     font-size: 3rem;
@@ -780,6 +782,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    border-bottom: 10px solid #ff652f;
+    margin: 40px 0px;
   }
   .projects .logo-button {
     width: 100%;
@@ -787,9 +791,10 @@
   }
   .projects .logo-button button {
     width: auto;
-    margin: 10px 0;
-    width: 600px;
-    font-size: 1.5rem;
+    margin: 15px 0;
+    width: 300px;
+    font-size: 1.2rem;
+    border-radius: 2rem;
   }
   .projects .logo-button img {
     display: none;
