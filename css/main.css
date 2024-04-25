@@ -798,6 +798,20 @@
     transition: all 0.5s ease-in-out;
     font-size: 1.5rem;
   }
+  .projects .seventh-project::after {
+    content: "Hangman Game (React & TS)";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 125px;
+    border-radius: 10px;
+    height: 30%;
+    width: 48%;
+    margin-left: 35px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+  }
   .projects-item {
     display: -webkit-box;
     display: -ms-flexbox;
