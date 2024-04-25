@@ -370,7 +370,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  content: "Iphone Calculator";
+  content: "Iphone Calculator (JS)";
   position: absolute;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
@@ -395,7 +395,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  content: "Weather App";
+  content: "Weather App (JS / SCSS)";
   position: absolute;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
@@ -470,7 +470,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  content: "Translator App";
+  content: "Translator App (JS)";
   position: absolute;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
@@ -495,7 +495,32 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  content: "Amazon Website Clone";
+  content: "Amazon Website Clone (JS)";
+  position: absolute;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  top: 100%;
+  left: 19.7%;
+  height: 100%;
+  width: 60.2%;
+  background: #ff652f;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.projects .seventh-project::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "Hangman Game (React & TS)";
   position: absolute;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;

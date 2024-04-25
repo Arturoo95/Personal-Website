@@ -38,11 +38,11 @@
   }
 
   .first-project::after {
-    @include secondaryCover("Iphone Calculator");
+    @include secondaryCover("Iphone Calculator (JS)");
   }
 
   .second-project::after {
-    @include secondaryCover("Weather App");
+    @include secondaryCover("Weather App (JS / SCSS)");
   }
 
   .third-project::after {
@@ -54,11 +54,15 @@
   }
 
   .fifth-project::after {
-    @include secondaryCover("Translator App");
+    @include secondaryCover("Translator App (JS)");
   }
 
   .sixth-project::after {
-    @include secondaryCover("Amazon Website Clone");
+    @include secondaryCover("Amazon Website Clone (JS)");
+  }
+
+  .seventh-project::after {
+    @include secondaryCover("Hangman Game (React & TS)");
   }
 
   &-item {
